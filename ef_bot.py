@@ -1,7 +1,9 @@
+
 import telebot
 import requests
 import json
-from config import BOT_TOKEN
+
+BOT_TOKEN = "TOKEN"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
