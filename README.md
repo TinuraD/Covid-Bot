@@ -1,2 +1,3 @@
 # EF-CovidBot <br/>
-First Bot of my coding.
+First Bot of my coding.<br/>
+Other details will be added soon.
