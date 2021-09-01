@@ -3,9 +3,7 @@ import telebot
 import requests
 import json
 
-bot_token = os.getenv("BOT_TOKEN")
-
-bot = telebot.TeleBot(bot_token)
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 
 # To get data from API
 response_API = requests.get('https://hpb.health.gov.lk/api/get-current-statistical')
