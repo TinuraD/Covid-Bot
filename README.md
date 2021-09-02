@@ -1,6 +1,6 @@
-# Caption Editor
+# Coivd Updater
 
-<p align="center"><a href="https://t.me/efnormbot"><img src="(https://user-images.githubusercontent.com/87059430/131767843-67e59f30-45b0-4d08-87b7-4f238d68c993.png" width="150"></a></p>
+<p align="center"><a href="https://t.me/efnormbot"><img src="https://user-images.githubusercontent.com/87059430/131252217-e42cef95-70d6-45fc-abf8-ac4562627490.png" width="150"></a></p>
 
 <h6 align="center"> @efcovidbot - You can get covid deatils by using this bot. </h6>
  
