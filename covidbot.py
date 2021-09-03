@@ -60,8 +60,8 @@ help = f"""
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     markup = telebot.types.InlineKeyboardMarkup()
-    markup.add(telebot.types.InlineKeyboardButton(text='Channel', url='https://t.me/szbots'),
-               telebot.types.InlineKeyboardButton(text='Group', url='https://t.me/slplatform')),
+    markup.add(telebot.types.InlineKeyboardButton(text='Join Channel', url='https://t.me/szbots'),
+               telebot.types.InlineKeyboardButton(text='Join Group', url='https://t.me/slplatform')),
     markup.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1)),
     bot.send_message(message.chat.id, text="Hi, කොරෝනා පිළිබද තොරතුරු ලබා ගැනීම සදහා [මාව](http://t.me/szcovidbot) භාවිතා කරන්න පුළුවන්. භාවිතා කරන ආකාරය දැන ගැනීමට /help භාවිතා කරන්න.",parse_mode='Markdown', reply_markup=markup)
 
