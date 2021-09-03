@@ -63,7 +63,7 @@ def send_welcome(message):
     markup.add(telebot.types.InlineKeyboardButton(text='Channel', url='https://t.me/SL_bot_zone'),
                telebot.types.InlineKeyboardButton(text='Group', url='https://t.me/slplatform')),
     markup.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1)),
-    bot.send_message(message.chat.id, text="Hi, කොරෝනා පිළිබද තොරතුරු ලබා ගැනීම සදහා [මාව](https://t.me/efcovidbot) භාවිතා කරන්න පුළුවන්. භාවිතා කරන ආකාරය දැන ගැනීමට /help භාවිතා කරන්න.",parse_mode='Markdown', reply_markup=markup)
+    bot.send_message(message.chat.id, text="Hi, කොරෝනා පිළිබද තොරතුරු ලබා ගැනීම සදහා [මාව](http://t.me/szcovidbot) භාවිතා කරන්න පුළුවන්. භාවිතා කරන ආකාරය දැන ගැනීමට /help භාවිතා කරන්න.",parse_mode='Markdown', reply_markup=markup)
 
 @bot.message_handler(commands=["covid"])
 def send_message(message):
