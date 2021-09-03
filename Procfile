@@ -1,1 +1,1 @@
-worker: python3 ef_bot.py
+worker: python3 covidbot.py
