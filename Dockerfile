@@ -62,10 +62,8 @@ RUN apt update && apt upgrade -y && \
 
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
-ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
-COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 
 # Starting Worker
