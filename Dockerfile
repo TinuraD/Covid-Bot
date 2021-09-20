@@ -62,6 +62,9 @@ RUN apt update && apt upgrade -y && \
 
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
+# Copy Python Requirements to /root/ef_norm
+RUN git clone -b main https://github.com/TinuraD/CovidBot
+WORKDIR /root
 
 # Install requirements
 RUN pip install -r requirements.txt
