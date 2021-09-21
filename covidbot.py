@@ -68,10 +68,6 @@ mark2 = telebot.types.InlineKeyboardMarkup()
 mark2.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1),
           telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")
 
-mark3 = telebot.types.InlineKeyboardMarkup()
-mark3.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1),
-          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")
-
 # Commands
 @bot.message_handler(commands=['start'])
 def send_start(message):
@@ -91,7 +87,7 @@ def send_help(message):
 
 @bot.message_handler(commands=["about"])
 def send_about(message):
-    bot.send_message(message.chat.id, "• මම කොරෝනා තොරතුරු දැන ගැනීම සදහා ටිනුර දිනිත් විසින් සාදන ලද Bot කෙනෙකි. \n• සියලු තොරතුරු [සෞඛ්‍ය ප්‍රවර්ධන කාර්‍යංශයෙන්](https://hpb.health.gov.lk) ලබා ගත් තොරතුරු ය.", parse_mode='Markdown', reply_markup=mark3)
+    bot.send_message(message.chat.id, "• මම කොරෝනා තොරතුරු දැන ගැනීම සදහා ටිනුර දිනිත් විසින් සාදන ලද Bot කෙනෙකි. \n• සියලු තොරතුරු [සෞඛ්‍ය ප්‍රවර්ධන කාර්‍යංශයෙන්](https://hpb.health.gov.lk) ලබා ගත් තොරතුරු ය.", parse_mode='Markdown')
 
 # Callback Data
 @bot.callback_query_handler(func=lambda call: True)
