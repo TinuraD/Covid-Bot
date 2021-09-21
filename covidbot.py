@@ -62,11 +62,11 @@ mark1 = telebot.types.InlineKeyboardMarkup()
 mark1.add(telebot.types.InlineKeyboardButton(text='Bot Updates', url='https://t.me/szbots'),
           telebot.types.InlineKeyboardButton(text='Join Group', url='https://t.me/slplatform')),
 mark1.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1)),
-mark1.add(telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query_current_chat="")),
+mark1.add(telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")),
 
 mark2 = telebot.types.InlineKeyboardMarkup()
 mark2.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1),
-          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query_current_chat=""))
+          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")
 
 mark3 = telebot.types.InlineKeyboardMarkup()
 mark3.add(telebot.types.InlineKeyboardButton(text='Join Our Group', url='https://t.me/slplatform'))
