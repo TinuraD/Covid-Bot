@@ -69,7 +69,8 @@ mark2.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback
           telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")
 
 mark3 = telebot.types.InlineKeyboardMarkup()
-mark3.add(telebot.types.InlineKeyboardButton(text='Join Our Group', url='https://t.me/slplatform'))
+mark3.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1),
+          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query="")
 
 # Commands
 @bot.message_handler(commands=['start'])
