@@ -7,7 +7,7 @@
 <p align="center"> <a href=http://t.me/szcovidbot><img src="https://user-images.githubusercontent.com/87059430/129430712-ea56286d-e8c7-457f-b267-b4b38704f955.png" width="150"></a></p>
 
 ## Deploy your own bot here.
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TinuraD/EF-CovidBot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TinuraD/CovidBot.git)
 
 ## This is first bot progammed by me.
 
