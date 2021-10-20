@@ -11,7 +11,7 @@
 
 ## This is first bot progammed by me.
 
-## Thanks
+## Special Thanks
 - Uvindu Bro
 - SL Geek School
 
