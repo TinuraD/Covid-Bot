@@ -1,6 +1,6 @@
 # Covid Updater Bot
 
-## PytelegramBot API based simple telegram bot to get latest covid 19 deatils.
+## [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/) based simple telegram bot to get latest covid 19 deatils. All details fetch from [Health Promotion Bureau](https://hpb.health.gov.lk/)
 
 <p align="center"><a href="http://t.me/szcovidbot"><img src="https://user-images.githubusercontent.com/87059430/131767843-67e59f30-45b0-4d08-87b7-4f238d68c993.png" width="150"></a></p>
 
