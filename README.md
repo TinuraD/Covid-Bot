@@ -10,6 +10,3 @@
 ## Special Thanks
 - Uvindu Bro
 - SL Geek School
-
-## Contributors
-- Tinura Dinith <a href="https://github.com/TinuraD"><img src="https://img.shields.io/badge/TinuraD-107D8D?logo=github"></a>
