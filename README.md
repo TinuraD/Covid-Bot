@@ -1,4 +1,4 @@
-# Covid Updater Bot 🦠
+# Covid Updater Bot 🦠 - Telegram Bot
 
 - [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/) based simple sinhala 🇱🇰 telegram bot to get latest covid 19 deatils. All details fetch from [HPB in Sri Lanka](https://hpb.health.gov.lk/)
 - Can be found as [@szcovidbot](http://t.me/szcovidbot) in telegram.
