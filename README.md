@@ -1,4 +1,4 @@
-# Coivd Updater
+# Covid Updater Bot
 
 <p align="center"><a href="http://t.me/szcovidbot"><img src="https://user-images.githubusercontent.com/87059430/131767843-67e59f30-45b0-4d08-87b7-4f238d68c993.png" width="150"></a></p>
 
