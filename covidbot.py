@@ -1,7 +1,7 @@
-import os, telebot, requests, json
+import telebot, requests, json
 from telebot import types
 
-bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # To get data from API
 response_API = requests.get('https://hpb.health.gov.lk/api/get-current-statistical')
@@ -25,7 +25,6 @@ global_recovered    = str(data['data']['global_recovered'])
 covidinfo = f"""
 ශ්‍රී ලංකාවේ කොරෝනා තත්වය. 🇱🇰
 🔄 {update_date_time} ට යාවත්කාලීන කරන ලදී.
-
 • නව රෝගීන් ගණන 😷 - {local_new_cases}
 • නව මරණ ගණන ⚰ - {local_new_deaths}
 • තහවුරු කරන ලද මුළු රෝගීන් ගණන 🤒 - {local_total_cases}
@@ -38,7 +37,6 @@ covidinfo = f"""
 gcovidinfo = f"""
 සමස්ත ලෝකයේ කොරෝනා තත්වය. 🌎
 🔄{update_date_time} ට යාවත්කාලීන කරන ලදී.
-
 • නව රෝගීන් ගණන 😷 - {global_new_cases}
 • නව මරණ ගණන ⚰ - {global_new_deaths}
 • තහවුරු කරන ලද මුළු රෝගීන් ගණන 🤒 - {global_total_cases}
@@ -52,7 +50,6 @@ help = f"""
  • /covid - ශ්‍රී ලංකාවේ නවතම කොරෝනා තොරතුරු සදහා.
  • /gcovid -සමස්ත ලෝකයේ නවතම කොරෝනා තොරතුරු සදහා.
  • /about - මම ගැන දැන ගැනීම සදහා.
-
 Inline mode 
  • Inline mode එකේ covid කියලා type කරන්න.
 """
@@ -66,7 +63,7 @@ mark1.add(telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_que
 
 mark2 = telebot.types.InlineKeyboardMarkup()
 mark2.add(telebot.types.InlineKeyboardButton(text='Get Latest Details', callback_data=1),
-          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query_current_chat="")
+          telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query_current_chat=""))
 
 # Commands
 @bot.message_handler(commands=['start'])
