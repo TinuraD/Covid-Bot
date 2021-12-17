@@ -27,7 +27,7 @@ from telebot import types
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
-# To get data from API
+# HPB API
 response_API = requests.get('https://hpb.health.gov.lk/api/get-current-statistical')
 data = json.loads(response_API.text)
 local_new_cases     = str(data['data']['local_new_cases'])
@@ -81,7 +81,7 @@ Inline mode
 # Markup
 mark1 = telebot.types.InlineKeyboardMarkup()
 mark1.add(telebot.types.InlineKeyboardButton(text='Updates', url='https://t.me/szteambots'),
-          telebot.types.InlineKeyboardButton(text='Join Group', url='https://t.me/slbotzone')),
+          telebot.types.InlineKeyboardButton(text='Support', url='https://t.me/slbotzone')),
 mark1.add(telebot.types.InlineKeyboardButton(text='Latest Details', callback_data=1)),
 mark1.add(telebot.types.InlineKeyboardButton(text='Go Inline', switch_inline_query_current_chat="")),
 
