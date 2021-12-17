@@ -24,8 +24,9 @@ SOFTWARE.
 
 import telebot, requests, json
 from telebot import types
+from os import getenv
 
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(getenv("BOT_TOKEN"))
 
 # HPB API
 response_API = requests.get('https://hpb.health.gov.lk/api/get-current-statistical')
