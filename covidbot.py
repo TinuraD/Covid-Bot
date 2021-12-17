@@ -109,7 +109,10 @@ def send_help(message):
 
 @bot.message_handler(commands=["about"])
 def send_about(message):
-    bot.send_message(message.chat.id, "• මම කොරෝනා තොරතුරු දැන ගැනීම සදහා ටිනුර දිනිත් විසින් සාදන ලද Bot කෙනෙකි. \n• සියලු තොරතුරු [සෞඛ්‍ය ප්‍රවර්ධන කාර්‍යංශයෙන්](https://hpb.health.gov.lk) ලබා ගත් තොරතුරු ය.", parse_mode='Markdown')
+    bot.send_message(message.chat.id, """
+• මම කොරෝනා තොරතුරු දැන ගැනීම සදහා ටිනුර දිනිත් විසින් සාදන ලද Bot කෙනෙකි.
+• සියලු තොරතුරු [සෞඛ්‍ය ප්‍රවර්ධන කාර්‍යංශයෙන්](https://hpb.health.gov.lk) ලබා ගත් තොරතුරු ය.
+                                      """, parse_mode='Markdown')
 
 # Callback Data
 @bot.callback_query_handler(func=lambda call: True)
